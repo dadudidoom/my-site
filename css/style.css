@@ -1,0 +1,239 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, sans-serif;
+}
+.grid {	
+	width: 1200px;
+    height: 2700px;
+	display: grid; 
+	grid-auto-rows: 63px 2577px; 
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-areas: "left head right"
+                       "left  content right"
+                       "footer  footer footer";
+}
+.header {
+    background-color: #f5f5f2;
+    grid-area: head;
+    height: 63px;
+}
+.logo{
+	padding: 20px 0 20px 0;
+	width: 130px;
+	height: 23px;
+	grid-area: logo;
+}
+.left {
+    background-color: #f5f5f2;
+    grid-area: left;
+    height: 2640px;
+}
+.right {
+    background-color: #f5f5f2;
+    grid-area: right;
+    height: 2640px;
+}
+.content {
+    background-color: #ffffff;
+    grid-area: content;
+    height: 2577px;
+}
+.title1{
+	text-align: center;
+	grid-area: title1;
+	margin: 63px 0 0 0;
+}
+.title1 a{
+	font-size: 30px;
+	text-decoration: none;
+	color: #fff;
+}
+.bg{
+	display: grid;
+	 grid-template-areas:". title1 ."
+                         ".  title2 ."
+                         ".  bg-2  .";
+	background-image: url(../img/bg/bg-1.jpg) ;
+	height: 420px;
+	width: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.title2{
+	margin: 30px 0 200px 0;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	color: #fff;
+	grid-area: title2;
+}
+.bg-2{
+	margin: -155px 138px 0 138px;
+	background-image: url(../img/bg/bg-1.png) ;
+	height: 410px;
+	width: 722px;
+	grid-area: bg-2;
+}
+.title3{
+	text-align: center;
+	margin: 158px 0 0 0;
+
+}
+.title3 a{
+	color:#5c37ef;
+	font-family: Tahoma, sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+.content-mini{
+	width: 800px;
+}
+.paragraph{
+	margin: 276px 0 0 0;
+}
+.gray{
+	color: #a8a8a8;
+}
+.points{
+	height: 121px;
+	background-color: #f7f8fa;
+	margin: 30px 0 0 0;
+}
+.subtitle-points{
+	padding: 34px 0 0 0;
+	font-size: 16px;
+	color: #000;
+	text-align: center;
+}
+.blue{
+	color: #396ea9;
+	text-decoration: underline;
+}
+.title-points{
+	padding: 20px 0 0 0;
+	font-size: 24px;
+	text-align: center;
+	color: #000;
+}
+.info{
+	display: grid;
+	grid-template-areas:"rule . price";
+	padding: 42px 0 0 0;
+	grid-column-gap: 20px;
+}
+.rule{
+	width: 400px;
+	grid-area: rule;
+}
+.title-rule{
+	font-size: 24px;
+	color: #000;
+}
+.info-rule{
+	padding-top: 30px;
+	font-size: 16px;
+	color: #000;
+}
+.info-rule ul{
+	padding-left: 17px;
+}
+.info-rule li{
+	height: 60px;
+}
+.price{
+	width: 400px;
+	grid-area: price;
+}
+.title-price{
+	font-size: 24px;
+	color: #000;
+}
+.points-price{
+	padding-top: 30px;
+	font-size: 16px;
+	color: #000;
+}
+.green{
+	margin: 0 0 11px 0;
+	font-size: 50px;
+	font-weight: bold;
+	color: #1ea01e;
+}
+.get-the-link {
+    background-color: #fff4b3;
+    height: 310px;
+    width: 800px;
+   
+}
+.title-get{
+	padding-top:  30px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+label{
+    display: inline-block;
+    width: 163px;
+}
+.myinfo {
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 140px;
+	height: 50px;
+
+}
+ input{
+    height: 40px;
+    width: 360px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 16px 0 0 0;
+
+}
+.butten{
+	color: #fff;
+	background-color: #b6d88a;
+	height: 40px;
+	width: 160px;
+	border-radius: 5px;
+	font-size: 16px;
+	margin:0 0 0 308px;;
+}
+#input {
+	margin: 0;
+}
+ #phone{
+	margin: 0;
+}
+ #franchise{
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #000000;
+    grid-area: footer;
+    height: 60px;
+    width: 100%;
+}
